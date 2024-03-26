@@ -1,0 +1,46 @@
+@import '../../assets/scss/variables.scss';
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    &-title {
+        font-size: $details-title-size-mobile;
+        color: $text-color-grey;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+
+    &-result {
+        color: $text-color-main;
+        font-size: $result-text-size;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .data-container {
+        width: 100%;
+        text-align: start;
+        padding-left: 33px;
+        border-right: 1px solid $text-color-grey;
+        height: 100%;
+        gap: 13px;
+
+        &-title {
+            font-size: $details-title-size-desktop;
+            letter-spacing: 1.2px;
+        }
+
+        &-result {
+            font-size: $details-text-desktop;
+            letter-spacing: -0.2px;
+            width: 75%;
+        }
+    }
+
+    .data-container:last-of-type {
+        border: none;
+    }
+}
