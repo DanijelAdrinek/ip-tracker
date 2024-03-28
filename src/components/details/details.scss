@@ -11,6 +11,8 @@
     background-color: $background-color;
     gap: 24px;
     border-radius: 15px;
+    position: relative;
+    z-index: 20;
 }
 
 @media screen and (min-width: 992px) {
