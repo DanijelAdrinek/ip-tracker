@@ -33,7 +33,7 @@ The Project uses JSDoc to explain all the complicated logic to anyone that comes
 
 1. clone the repository
 ```
-    git clone https://github.com/DanijelAdrinek/todo-app.git
+    git clone https://github.com/DanijelAdrinek/ip-tracker.git
 ```
 2. install dependencies
 ```
