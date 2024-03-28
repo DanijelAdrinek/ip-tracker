@@ -34,6 +34,12 @@ class IPDataManager {
     }
 
 
+    /**
+     * Will check if the IP Address entered is valid or not, and if it is, it will try to contact the geo.ipify.org website to get data on the IP Address entered
+     * 
+     * @param {HTMLInputElement} inputElement - Input Element used to write the IP address
+     * @returns {Object | null} Depending on if the operation was successful or not, it will either return new ipData object or null
+     */
     async fetchInfo(inputElement) {
         const ipAddress = inputElement.value;
         const inputElementParent = inputElement.parentNode;
