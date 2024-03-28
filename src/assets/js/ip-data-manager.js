@@ -41,25 +41,22 @@ class IPDataManager {
      * @returns {Object | null} Depending on if the operation was successful or not, it will either return new ipData object or null
      */
     async fetchInfo(inputElement) {
-        const ipAddress = inputElement.value;
-        const inputElementParent = inputElement.parentNode;
+        const inputText = inputElement.value;
 
-        // check if IP address entered is valid and exit function if its not
-        if(this._isValidIPAddress(ipAddress)) {
-            inputElementParent.classList.remove('ip-error');
+        let url;
+        // check if IP address entered is valid, and if not, send the string as domain
+        if(this._isValidIPAddress(inputText)) {
+            url = `https://geo.ipify.org/api/v1?apiKey=${this.apiKey}&ipAddress=${inputText}`;
         } else {
-            this._showErrorWithIP(inputElementParent); 
-            return null;
+            url = `https://geo.ipify.org/api/v1?apiKey=${this.apiKey}&domain=${inputText}`;
         }
-
-        const url = `https://geo.ipify.org/api/v1?apiKey=${this.apiKey}&ipAddress=${ipAddress}`;
 
         try {
             const response = await fetch(url);
             if (response.ok) {
                 const data = await response.json();
                 return {
-                    ip: ipAddress,
+                    ip: data.ip,
                     location: `${data.location.city}, ${data.location.country}`,
                     coordinates: {
                         latitude: data.location.lat,
