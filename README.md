@@ -32,13 +32,14 @@ The Project uses JSDoc to explain all the complicated logic to anyone that comes
 
 
 1. clone the repository
-
-`git clone https://github.com/DanijelAdrinek/todo-app.git`
-
+```
+git clone https://github.com/DanijelAdrinek/todo-app.git
+```
 2. install dependencies
-
-`npm install`
-
+```
+npm install
+```
 3. run app
-
-`npm start`
+```
+npm start
+```
