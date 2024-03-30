@@ -58,7 +58,7 @@ class Header extends Component {
                     <form onSubmit={this.handleSubmit} id='ip-form'>
                         <div className="form-group">
                             <input type="text" id='ip-input' placeholder='Search for any IP address or domain'/>
-                            <button className='submit-btn'>
+                            <button className='submit-btn' aria-label="Submit Button">
                                 <IconArrow/>
                             </button>
                         </div>

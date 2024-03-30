@@ -7,7 +7,7 @@
     width: 100%;
     height: 300px;
     padding-top: 28px;
-    background-image: url("../../assets/images/pattern-bg-mobile.png");
+    background-image: url("../../assets/images/pattern-bg-mobile.webp"), url("../../assets/images/pattern-bg-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -71,7 +71,7 @@
 
 @media screen and (min-width: 992px) {
     .header {
-        background-image: url("../../assets/images/pattern-bg-desktop-real.png");
+        background-image: url("../../assets/images/pattern-bg-desktop-real.webp"), url("../../assets/images/pattern-bg-desktop-real.png");
         height: 280px;
     }
 
