@@ -13,6 +13,8 @@
     border-radius: 15px;
     position: relative;
     z-index: 20;
+    /* properties: inset(optional) x y blur spread color ;*/
+    box-shadow: 0 20px 30px -20px rgba(0,0,0,0.25);
 }
 
 @media screen and (min-width: 992px) {

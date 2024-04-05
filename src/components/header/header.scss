@@ -56,6 +56,10 @@
     letter-spacing: 0.1px;
 }
 
+#ip-input::placeholder {
+    letter-spacing: -0.07px;
+}
+
 .submit-btn {
     min-width: 58px;
     height: 58px;
@@ -78,8 +82,7 @@
     .title {
         font-size: $title-text-size-desktop;
         font-weight: 500;
-        letter-spacing: -0.5px;
-        word-spacing: -0.8px;
+        letter-spacing: -0.4px;
     }
     
     .form-group {
